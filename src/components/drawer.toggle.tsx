@@ -6,6 +6,7 @@ import { DrawerActions } from 'expo-router/build/react-navigation';
 
 export default function DrawerToggle() {
     const navigation = useNavigation();
+    const haris = 0
 
     return (
         <Pressable
