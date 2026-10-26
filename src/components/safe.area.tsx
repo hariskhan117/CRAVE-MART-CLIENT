@@ -7,7 +7,6 @@ interface Props {
     children: React.ReactNode,
     bgColor?: string,
     edges?: ("top" | "bottom" | "left" | "right")[];
-
 }
 const SafeArea = ({ children, bgColor, edges = ["top", "bottom"] }: Props) => {
     return (
