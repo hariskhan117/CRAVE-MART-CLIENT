@@ -79,7 +79,7 @@ const HomeScreen = () => {
     const [activeIndex, setActiveIndex] = useState(0)
     const navigation = useNavigation()
     return (
-        <SafeArea>
+        <SafeArea bgColor={Colors.blueBadgeLight}>
 
             <View style={styles.container}>
 

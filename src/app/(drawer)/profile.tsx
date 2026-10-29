@@ -1,7 +1,7 @@
 import SafeArea from '@/components/safe.area';
 import { BorderRadius, Colors, Shadows, Spacing, Typography } from '@/constant/theme';
 import { Ionicons } from '@expo/vector-icons';
-import { router } from 'expo-router';
+import { useRouter } from 'expo-router';
 import React from 'react';
 import { StyleSheet, Text, TouchableOpacity, View } from 'react-native';
 
@@ -78,6 +78,7 @@ const stylez = StyleSheet.create({
 })
 
 export default function ProfileScreen() {
+    const router = useRouter()
     return (
         <SafeArea bgColor={Colors.background}>
             <View style={styles.container}>
@@ -100,7 +101,7 @@ export default function ProfileScreen() {
             </View>
             <View style={styles.buttonContainer}>
 
-                <TouchableOpacity style={styles.logoutBtn}>
+                <TouchableOpacity style={styles.logoutBtn} onPress={() => router.push("/(auth)/login")}>
                     <Text style={styles.loginTxt}>Logout</Text>
                 </TouchableOpacity>
             </View>
